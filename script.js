@@ -18,3 +18,6 @@ if(service3d){
  link3d.addEventListener('click',e=>{e.preventDefault();e.stopPropagation();open3d()});service3d.addEventListener('click',open3d);service3d.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open3d()}});
  modal.querySelector('.project3d-close').addEventListener('click',close3d);modal.addEventListener('click',e=>{if(e.target===modal)close3d()});modal.querySelectorAll('.project3d-card').forEach((card,i)=>card.addEventListener('click',()=>{lightboxImage.src=projects3d[i][0];lightboxImage.alt='3D-проект: '+projects3d[i][1];lightboxName.textContent=projects3d[i][1]+' · 3D-проект';lightbox.classList.add('open');lightbox.setAttribute('aria-hidden','false')}));document.addEventListener('keydown',e=>{if(e.key==='Escape'&&modal.classList.contains('open')&&!lightbox.classList.contains('open'))close3d()});
 }
+
+// Smooth background parallax
+const parallaxScript=document.createElement('script');parallaxScript.src='parallax.js?v=20260908-1240';parallaxScript.defer=true;document.head.appendChild(parallaxScript);
