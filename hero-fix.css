@@ -1,0 +1,1 @@
+.hero .hero-inner{width:min(1320px,calc(100% - 64px))!important;margin-left:auto!important;margin-right:auto!important}.hero .hero-copy{margin-left:0!important;margin-right:auto!important}@media(max-width:1050px){.hero .hero-inner{width:min(100% - 40px,1320px)!important}}@media(max-width:760px){.hero .hero-inner{width:calc(100% - 30px)!important}}
